@@ -1,0 +1,95 @@
+/*A guy on stackoverflow said this helps with better box sizing
+HAVE TO UNDERSTAND LATER*/
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+/*Setting box sizing model, font and fint size*/
+html {
+  box-sizing: border-box;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1em;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/*set min height so it always ocupies the entire viewport,
+also use the dvh that takes into account mobile devices*/
+body {
+  margin: 0;
+  min-height: 100vh;
+  min-height: 100dvh;
+  font-family: Hoefler Text; /*Chose different font later in the project*/
+  background-color: rgb(233, 245, 248);
+}
+
+/*top of the page, just regular stuff here*/
+.masthead {
+  background-color: rgba(245, 245, 245, 0.9);
+  padding: 1.75rem 0;
+}
+
+/*this is to keep the max width of the content
+use in the main content too, is good for reponsive containers*/
+.container {
+  max-width: min(96%, 1140px);
+  margin: 0 auto;
+}
+
+/*this will align the items accordingly, making space between
+the 2 child elements*/
+.primary-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*make them flex too, and reset the list style*/
+.nav-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*margin to keep the links away from each other*/
+.nav-links li {
+  margin-left: 10px;
+}
+/*so the first link doesnt have a margin on the left*/
+nav-links li:first-child {
+  margin-left: 0;
+}
+
+/*link styles*/
+/*put the different link styles here*/
+.nav-link {
+  text-decoration: none;
+  color: rgb(0, 53, 128);
+  font-size: 1.25rem;
+}
+
+/*Create effect for link states, hover, active, etc*/
+.nav-link:hover {
+  color: rgb(73, 0, 106);
+}
+
+/*screen reader only class for accesibility */
+.sr-only {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(100%);
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  border: 0;
+  margin: -1px;
+  white-space: nowrap;
+}
