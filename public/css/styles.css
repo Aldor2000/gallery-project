@@ -45,8 +45,18 @@ body {
 /*this is to keep the max width of the content
 use in the main content too, is good for reponsive containers*/
 .container {
-  max-width: min(96%, 1140px);
+  max-width: min(90%, 1440px);
   margin: 0 auto;
+}
+
+/*You can also use this for bigger contents*/
+
+.container--narrow {
+  max-width: min(92%, 1140px);
+}
+
+.container--wide {
+  max-width: min(90%, 1600px);
 }
 
 /*screen reader only class for accesibility */
