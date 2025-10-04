@@ -1,8 +1,8 @@
 :root {
-  --primary-color: #80A1BA; /* Blue */
-  --secondary-color: #91C4C3; /* Gray */
-  --accent-color: #B4DEBD; /* Green */
-  --accent-color-2: #FFF7DD; /* Yellow */
+  --primary-color: #80a1ba; /* Blue */
+  --secondary-color: #91c4c3; /* Gray */
+  --accent-color: #b4debd; /* Green */
+  --accent-color-2: #fff7dd; /* Yellow */
   --text-color-dark: #343a40; /* Dark gray */
   --text-color-light: #f8f9fa; /* Light gray */
 
@@ -11,7 +11,6 @@
   --main-blue: #45567d;
   --main-gray: #303841;
 }
-
 
 /*A guy on stackoverflow said this helps with better box sizing
 HAVE TO UNDERSTAND LATER*/
@@ -33,16 +32,13 @@ html {
   font-size: 62.5%;
 }
 
-
-
-
 /*set min height so it always ocupies the entire viewport,
 also use the dvh that takes into account mobile devices*/
 body {
   margin: 0;
   min-height: 100vh;
   min-height: 100dvh;
-  font-family: 'Poppins', sans-serif; /*Chose different font later in the project*/
+  font-family: "Poppins", sans-serif; /*Chose different font later in the project*/
   background-color: var(--primary-color);
 }
 
@@ -51,21 +47,31 @@ use in the main content too, is good for reponsive containers*/
 .container {
   max-width: min(96%, 1140px);
   margin: 0 auto;
-  
+}
+
+/*screen reader only class for accesibility */
+.sr-only {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(100%);
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  border: 0;
+  margin: -1px;
+  white-space: nowrap;
 }
 
 /*NAVIGATION STYLES*/
 /*top of the page, just regular stuff here*/
 .masthead {
   background-color: var(--accent-color-2);
-  padding: 3rem 3rem;  
-  position: sticky;   /* makes it stick */
-  top: 0;             /* stick at the very top */
+  padding: 3rem 3rem;
+  position: sticky; /* makes it stick */
+  top: 0; /* stick at the very top */
   z-index: 1000;
   border-bottom: 4px solid var(--main-red);
-  
-  
-  
 }
 
 /*this will align the items accordingly, making space between
@@ -74,8 +80,6 @@ the 2 child elements*/
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
-  
 }
 
 /*left side of the nav, logo and title*/
@@ -97,7 +101,6 @@ the 2 child elements*/
   list-style: none;
   margin: 0;
   padding: 0;
-  
 }
 
 /*margin to keep the links away from each other*/
@@ -115,29 +118,14 @@ the 2 child elements*/
   text-decoration: none;
   color: var(--text-color-dark);
   font-size: 2.2rem;
-  
-  
 }
 
 /*Create effect for link states, hover, active, etc*/
 .nav-link:hover {
   color: var(--main-blue);
-  
 }
 
-/*screen reader only class for accesibility */
-.sr-only {
-  position: absolute;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  clip-path: inset(100%);
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  border: 0;
-  margin: -1px;
-  white-space: nowrap;
-}
+
 /*Footer styles*/
 .btn {
   display: inline-block;

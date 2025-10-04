@@ -1,5 +1,5 @@
 /*MAIN CONTENT STYLES*/
-.welcome-section {  
+.welcome-section {
   min-height: 85vh;
   display: flex;
   flex-direction: column;
@@ -20,7 +20,7 @@
   color: var(--text-color-dark);
   text-align: center;
   margin-top: 2rem;
-} 
+}
 
 .description {
   font-size: 2rem;
@@ -64,7 +64,6 @@
   color: var(--main-blue);
 }
 
-
 /*CONTACT SECTION*/
 .contact-section {
   display: flex;
@@ -87,26 +86,24 @@
   color: var(--text-color-dark);
 }
 
-
-.contact-links{
+.contact-links {
   display: flex;
   justify-content: center;
-  gap : 2rem;
+  gap: 2rem;
   flex-wrap: wrap;
   margin-top: 4rem;
 }
 
-.contact-links > a{
+.contact-links > a {
   text-decoration: none;
-  color:var(--text-color-dark);
-  
+  color: var(--text-color-dark);
 }
 
-.contact-details{
+.contact-details {
   font-size: 3rem;
   transition: transform 0.3s ease-out;
 }
 
-.contact-details:hover{
+.contact-details:hover {
   transform: translateY(8px);
 }
