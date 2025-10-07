@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/map.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- START NAVBAR SECTION -->
+    <header class="masthead">
+      <nav class="primary-nav">
+        <h1 class="sr-only">My gallery</h1>
+        <div class="left-nav">
+          <a href="index.html"><img src="images/favicon.ico" alt="logo" /></a>
+          <h1>Aldor's page</h1>
+        </div>
+
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- END NAVBAR SECTION -->
+     <main class="map-main container">
+        <div id="map">
+
+
+        </div>
+
+     </main>
+
+     <!-- START FOOTER SECTION -->
+    <footer class="footer-section">
+      <p>**Everything in here is a work in progress. Content might change**</p>
+      <p>© Created by Aldor 2025</p>
+    </footer>
+    <!-- END FOOTER SECTION -->
+
+
+    
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+ <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
+
+     <script src="js/map.js"></script>
+  </body>
+</html>
